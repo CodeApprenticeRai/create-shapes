@@ -26,7 +26,9 @@ Create Shapes Application!
  Links:
  
  Basic Authentication Considerations - https://medium.com/of-all-things-tech-progress/starting-with-authentication-a-tutorial-with-node-js-and-mongodb-25d524ca0359
+ 
  Further Authentication Security Considerations - https://hackernoon.com/your-node-js-authentication-tutorial-is-wrong-f1a3bf831a46
+ 
  Sessions ( What They Are, Why They are Important ? ) - https://stormpath.com/blog/everything-you-ever-wanted-to-know-about-node-dot-js-sessions
 #### Main Interface 
 
@@ -38,9 +40,13 @@ Tasks:
 Links: 
 
 http://velocityjs.org
+
 https://jqueryui.com
+
 https://two.js.org
+
 http://paperjs.org
+
 https://d3js.org
 
 ####  Handling Creator View Overlay 
