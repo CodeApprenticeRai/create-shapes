@@ -1,13 +1,16 @@
 # create-shapes
 Create Shapes Application!
 
+A JS CRUD application. 
+
 ### Objectives
 
 #### Main Objectives
 
-- Build Functions that alter database tables. 
-- Build UI. 
-- Integrate UI with Back-End. 
+- Create a User Registration System ( with Persistent Auth )
+- Provide System for Relating Shapes a user creates to the User ( in a DB) 
+- Visualizing / Animation Shapes 
+- Building the UX ( Components, Etc )
 
 #### User Registration
  What is the standard way to Authenticate Users? 
@@ -22,6 +25,7 @@ Create Shapes Application!
  
  Tasks: 
  
+ ....
  
  Links:
  
@@ -30,12 +34,25 @@ Create Shapes Application!
  Further Authentication Security Considerations - https://hackernoon.com/your-node-js-authentication-tutorial-is-wrong-f1a3bf831a46
  
  Sessions ( What They Are, Why They are Important ? ) - https://stormpath.com/blog/everything-you-ever-wanted-to-know-about-node-dot-js-sessions
-#### Main Interface 
+ 
+#### Database Schema Considerations
 
+Tasks: 
+
+...
+
+Links: 
+
+...
+
+
+#### Visualization / Animation  
+ 
 How to create Network View? Are there packages/modules that make it easy? 
 
 Tasks: 
- ...
+
+...
 
 Links: 
 
@@ -49,12 +66,23 @@ http://paperjs.org
 
 https://d3js.org
 
-####  Handling Creator View Overlay 
+####  UX  
+
+Creator Modal View
 
 How to create Overlay?  Are there packages/modules that make it easy? 
 
 
-### Links
+Tasks: 
+
+...
+
+Links: 
+
+...
+
+### General Links For Learning 
+
 #### Get Node
 https://nodejs.org/en/download/
 
