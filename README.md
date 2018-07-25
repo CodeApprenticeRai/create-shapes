@@ -11,7 +11,7 @@ A JS CRUD application.
 - Provide System for Relating Shapes a user creates to the User ( in a DB) 
 - Visualizing / Animation Shapes 
 - Building the UX ( Components, Etc )
-
+-------------
 #### User Registration
  What is the standard way to Authenticate Users? 
  
@@ -35,6 +35,7 @@ A JS CRUD application.
  
  Sessions ( What They Are, Why They are Important ? ) - https://stormpath.com/blog/everything-you-ever-wanted-to-know-about-node-dot-js-sessions
  
+---------------------
 #### Database Schema Considerations
 
 Tasks: 
@@ -45,7 +46,7 @@ Links:
 
 ...
 
-
+------------
 #### Visualization / Animation  
  
 How to create Network View? Are there packages/modules that make it easy? 
@@ -66,8 +67,9 @@ http://paperjs.org
 
 https://d3js.org
 
+------------------------
 ####  UX  
-
+============
 Creator Modal View
 
 How to create Overlay?  Are there packages/modules that make it easy? 
@@ -81,6 +83,7 @@ Links:
 
 ...
 
+-----------------------------
 ### General Links For Learning 
 
 #### Get Node
