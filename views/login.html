@@ -11,7 +11,11 @@
 
     <div class="container">
       <h1>This is an Example Login View</h1>
-
+      <% if ( signUpConf ) { %>
+        <div class="alert alert-success" role="alert">
+          Your account has successfully been created!
+        </div>
+      <% } %>
       <form action="/">
         <div class = "form-group">
           <label> Username </label>
