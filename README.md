@@ -8,6 +8,7 @@ A JS CRUD application.
 #### Main Objectives
 
 - Create a User Registration System ( with Persistent Auth )
+
 - Provide System for Relating Shapes a user creates to the User ( in a DB) 
 - Visualizing / Animation Shapes 
 - Building the UX ( Components, Etc )
@@ -23,9 +24,15 @@ A JS CRUD application.
  
  Are there already node packages/modules to do this?
  
+ Somethings may be missed. Note them as soon as aware of them. 
+ 
  Tasks: 
  
- ....
+ [ ] User Can Securely Added to the Database and Verfied Against It. 
+ 
+ [ ] Create Session After User is Successfully Logged in ( 10 mins ) 
+ 
+ 
  
  Links:
  
@@ -40,7 +47,9 @@ A JS CRUD application.
 
 Tasks: 
 
-...
+[ ] Write Shape Object Model ( 20 mins ) 
+
+
 
 Links: 
 
@@ -53,7 +62,7 @@ How to create Network View? Are there packages/modules that make it easy?
 
 Tasks: 
 
-...
+[ ] Research an Example visualation framework and use it to Animate Shapes as Intended in User Story. ( 30 - 45 mins)  
 
 Links: 
 
