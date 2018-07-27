@@ -57,7 +57,7 @@ db.once('open', function() {
 
 ///express router to handle requests
 app.get('/', function(req, res, next){
-  res.render('login', { signUpConf: false }, function(err, html){
+  res.render('login', { signUpConf: false, badLogin: false }, function(err, html){
     if (err){
       return next(err);
     }
@@ -85,12 +85,30 @@ app.get('/', function(req, res, next){
 //     });
 // };
 
-// app.post('/', function(req, res, next){
-//   if (
-//     req.body.username &&
-//     req.body.password
-//   )
-// }
+app.post('/', function(req, res, next){
+  if (
+    req.body.username &&
+    req.body.password ){
+      // // securely check to see if the user, pass pair exists in db
+      User.findOne(
+        { username: req.body.username },
+        function (err, user){
+          if (err) throw err;
+          if (user == null ){
+            return res.render('login', { badLogin: true, signUpConf: false } );
+          }
+
+          user.comparePassword(req.body.password, function(err, isMatch){
+            if (err) throw err;
+            if ( isMatch ){
+              res.send("Login Successful!");
+            } else  {
+              return res.render('login', { badLogin: true, signUpConf: false } );
+            }
+          });
+      });
+    }
+});
 
 app.get('/sign_up', function(req, res, next){
     res.render('sign_up', function(err, html){
@@ -125,7 +143,7 @@ app.post('/sign_up', function(req, res, next){
           return next(err);
         } else {
           console.log("Done!");
-          return res.render('login', { signUpConf: true } ); // redirect to login view with some message to confirm that user was create successfully.
+          return res.render('login', { signUpConf: true, badLogin: false } ); // redirect to login view with some message to confirm that user was create successfully.
         }
       })
 

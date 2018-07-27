@@ -16,15 +16,20 @@
           Your account has successfully been created!
         </div>
       <% } %>
-      <form action="/">
+      <% if ( badLogin ) { %>
+        <div class="alert alert-danger" role="alert">
+          That Username / Password doesn't exist in our database.
+        </div>
+      <% } %>
+      <form action="/" method="post">
         <div class = "form-group">
           <label> Username </label>
-          <input type="username" class="form-control" id="username" placeholder="Enter Email">
+          <input name="username" type="username" class="form-control" id="username" placeholder="Enter Email">
         </div>
 
         <div class = "form-group">
           <label> Password </label>
-          <input type="password" class="form-control" id="password" placeholder="Password">
+          <input name="password" type="password" class="form-control" id="password" placeholder="Password">
         </div>
         <p><small> <a href="/sign_up"> Create a New Account </a> </small></p>
         <button type="submit" class="btn btn-primary"> Submit </button>
