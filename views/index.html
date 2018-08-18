@@ -1,0 +1,34 @@
+<! doctype html>
+
+<html>
+  <head>
+    <!-- Boostrap CSs beacause yes  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+        <script src="//cdn.bootcss.com/two.js/0.6.0/two.min.js"></script>
+    <!-- <script src="./two.js"></script> -->
+  </head>
+
+  <body>
+    <div class="container" style="background-color: #C0BDD7;">
+        <h1> Hello,  <% if ( locals.user ){ %>
+          <%= locals.user.username %>
+          <% } else { %>
+            Stranger
+          <% } %>!
+        </h1>
+        <!-- <canvas style="width=100%;" height="400"><canvas> -->
+    </div>
+
+    <div class="row">
+      <div id="draw-shapes"></div>
+      <div class="col">
+        <h1 id="C2analytics">Position of Circle1:  <//h1>
+        <h1 id="C1analytics">Position of Circle1:  <//h1>
+        <h1 id="collision-analytics"></h1> 
+      </div>
+    </div>
+  </body>
+
+    <script src="/static/js/shapes.js"></script>
+</html>
